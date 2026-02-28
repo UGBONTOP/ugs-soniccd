@@ -221,6 +221,9 @@ function locateFile(path) {
   if (Module['locateFile']) {
     return Module['locateFile'](path, scriptDirectory);
   }
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path;
+  }
   return scriptDirectory + path;
 }
 
