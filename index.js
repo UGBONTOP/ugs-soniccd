@@ -23,7 +23,6 @@ var Module = typeof Module != 'undefined' ? Module : {};
       }
 
       // --- CHUNKED LOADING ---
-      var CHUNK_PARTS = [
 var CHUNK_PARTS = [
   'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part0',
   'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part1',
