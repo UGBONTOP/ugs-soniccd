@@ -1192,7 +1192,7 @@ function createExportWrapper(name, fixedasm) {
 }
 
 var wasmBinaryFile;
-  wasmBinaryFile = 'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.wasm';
+  wasmBinaryFile = 'https://cdn.jsdelivr.net/gh/UGBONTOP/soniccdwasm@main/index.wasm';
   if (!isDataURI(wasmBinaryFile)) {
     wasmBinaryFile = locateFile(wasmBinaryFile);
   }
