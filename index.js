@@ -24,13 +24,14 @@ var Module = typeof Module != 'undefined' ? Module : {};
 
       // --- CHUNKED LOADING ---
       var CHUNK_PARTS = [
-        'index.data.chunk99.part0',
-        'index.data.chunk99.part1',
-        'index.data.chunk99.part2',
-        'index.data.chunk99.part3',
-        'index.data.chunk99.part4',
-        'index.data.chunk99.part5',
-      ];
+var CHUNK_PARTS = [
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part0',
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part1',
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part2',
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part3',
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part4',
+  'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.data.chunk99.part5',
+];
       var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
 
       function fetchChunk(partName, partIndex, totalParts, callback, errback) {
@@ -1192,7 +1193,7 @@ function createExportWrapper(name, fixedasm) {
 }
 
 var wasmBinaryFile;
-  wasmBinaryFile = 'index.wasm';
+  wasmBinaryFile = 'https://cdn.jsdelivr.net/gh/UGBONTOP/ugs-soniccd@main/index.wasm';
   if (!isDataURI(wasmBinaryFile)) {
     wasmBinaryFile = locateFile(wasmBinaryFile);
   }
